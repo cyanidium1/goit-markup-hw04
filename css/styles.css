@@ -43,11 +43,11 @@ a {
 .navigation {
   margin-left: 100px;
   display: flex;
-  width: 300px;
   justify-content: space-between;
   align-items: center;
 }
 .nav-item {
+  margin: 0 25px 0 25px;
   font-weight: 500;
   transition: 0.5s;
 }
@@ -111,16 +111,21 @@ a {
   letter-spacing: 0.06em;
   margin-top: 30px;
   cursor: pointer;
+  border-radius: 4px;
+  border: 0px;
 }
 
 /* WHAT WE DO */
+.whatWeDo {
+  padding-bottom: 94px;
+}
 .whatWeDo-inside {
   max-width: 1170px;
   margin: 0 auto;
+  padding-top: 94px;
 }
 /* 4 hor texts */
 .sometexts {
-  margin-top: 94px;
   display: flex;
   justify-content: space-between;
 }
@@ -167,13 +172,14 @@ a {
 .pics {
   flex-wrap: wrap;
   margin-top: 50px;
-  margin-bottom: 94px;
   display: flex;
   justify-content: space-between;
 }
 /* DREAM TEAM */
 .dreamTeam {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .dreamTeam-inside {
   max-width: 1170px;
@@ -185,15 +191,14 @@ a {
   color: #212121;
   text-align: center;
   margin: 0px 0 50px 0;
-  padding-top: 94px;
 }
 .bobs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 50px;
 }
 .bobs-item {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,19 +212,28 @@ a {
   font-weight: 500;
   font-size: 16px;
   color: #212121;
-  margin: 30px 0 10px 0;
+}
+.bobs-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px;
+}
+.bt-work {
+  font-size: 16px;
+  margin-top: 10px;
 }
 .social-list {
+  margin-top: 16px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
-  margin-top: 16px;
 }
 .sl-item {
   margin: 0 5px;
+  border-radius: 50%;
 }
 .social-list-link {
-  border-radius: 50%;
+  
   height: 44px;
   width: 44px;
   display: flex;
@@ -283,12 +297,13 @@ a {
 /* FOOTER */
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 .footer-inside {
   max-width: 1170px;
   display: flex;
-    margin: 0 auto;
-    padding: 60px 0;
+  margin: 0 auto;
+  
 }
 .footer-adresses {
   display: flex;
@@ -306,27 +321,47 @@ a {
 .white {
   color: white;
 }
+.footer-socials {
+  margin: 15px 0 0 70px;
+}
 .fsoc-text {
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-bottom: 20px;
 }
 .social-list-footer {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
+  display: flex;
+  
 }
 .sl-item-footer {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 5px;
+  fill: white;
+  border-radius: 50%;
+}
+.sl-link-footer {
+  margin-top: 5px;
 }
 .sl-class-footer {
-width: 10px;
-height: 10px;
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+}
+.sl-item-footer:hover {
+  background-color: var(--blue-color);
 }
 /* PORTFOLIO */
+.portfolio-main {
+  padding-top: 94px;
+}
 .portfolio-inside {
   max-width: 1170px;
   margin: 0 auto;
@@ -339,16 +374,19 @@ height: 10px;
 }
 .pf-button {
   color: #2f303a;
-  padding: 6px 22px;
+  padding: 13px 22px;
   margin: 8px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  border-color: #f5f4fa;
+  border: 0;
   margin-bottom: 50px;
   cursor: pointer;
   transition: 0.5s;
   font-weight: 700;
   font-size: 16px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .pf-button:hover {
   background-color: var(--blue-color);
@@ -366,7 +404,7 @@ height: 10px;
   margin: 15px 0;
 }
 .pf-text {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .pf-header {
